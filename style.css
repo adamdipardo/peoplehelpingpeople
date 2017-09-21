@@ -1,0 +1,284 @@
+/*
+Theme Name: People Helping People
+Author: Adam Di Pardo
+Version: 0.1
+Description: Theme for People Helping People
+ */
+
+body {
+	color: #4A4A4A;
+	padding-bottom: 100px;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Nav CSS */
+nav.navbar {
+	margin: 0;
+	padding-top: 30px;
+}
+
+a.navbar-brand {
+	font-size: 25px;
+	color: #4A4A4A;
+}
+
+@media all and (max-width: 767px) {
+	a.navbar-brand {
+		font-size: 18px;
+	}
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #4A4A4A;
+}
+
+body.has-thumbnail .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+div.navbar-collapse {
+	border-color: #4A4A4A;
+}
+
+@media all and (max-width: 767px) {
+	div.navbar-collapse {
+		float: none !important;
+	}
+}
+
+body.has-thumbnail div.navbar-collapse {
+	border-color: white;
+}
+
+body.has-thumbnail a.navbar-brand {
+	color: white;
+}
+
+ul.nav.navbar-nav {
+	font-size: 20px;
+}
+
+ul.nav.navbar-nav li a {
+	color: #4A4A4A;
+}
+
+body.has-thumbnail ul.nav.navbar-nav li a {
+	color: white;
+}
+
+ul.nav.navbar-nav > li > a:hover {
+	background-color: transparent;
+}
+
+/* Header CSS */
+body.has-thumbnail header div.hero.shade:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+header div.hero {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 51px;
+}
+
+header div.hero.bottom {
+	background-position: center bottom;
+}
+
+header div.hero.top {
+	background-position: center top;
+}
+
+body.has-thumbnail header div.hero {
+	min-height: 561px;
+}
+
+@media all and (max-width: 767px) {
+	body.has-thumbnail header div.hero {
+		min-height: 300px;
+	}
+}
+
+/* Content CSS */
+h1 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 60px;
+	line-height: 1.23em;
+	color: #4A4A4A;	
+	text-align: center;
+}
+
+@media all and (max-width: 767px) {
+	h1 {
+		font-size: 32px;
+		line-height: 1.5em;
+	}
+}
+
+h1.left {
+	text-align: left;
+}
+
+h3 {
+	font-size: 28px;
+	color: #8e8e93;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.btn.btn-primary {
+	background-color: #f6a623;
+	color: white;
+	padding: 15px 23px 12px;
+	border: none;
+	border-radius: 3px;
+}
+
+.btn.btn-primary:active {
+	background-color: #f6a623;
+}
+
+/* Home Page CSS */
+div.team-members {
+	margin-bottom: 50px;
+}
+
+div.meet-all-members {
+	text-align: center;
+}
+
+/* Members Archive CSS */
+div.member-box {
+	margin-top: 40px;
+	font-size: 18px;
+}
+
+div.member-box a, div.member-box a:hover {
+	text-decoration: none;
+	color: #4A4A4A;
+}
+
+div.member-box h4 {
+	margin-top: 11px;
+}
+
+div.member-box div.member-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Single Members CSS */
+div.single-member {
+	font-size: 21px;
+	line-height: 1.5em;
+}
+
+div.single-member h1 {
+	margin-bottom: 40px;
+}
+
+div.single-member div.member-image > img {
+	margin-bottom: 45px;
+}
+
+div.single-member div.member-image a.btn.btn-primary {
+	padding: 15px 45px 12px;
+	max-width: 100%;
+}
+
+div.single-member div.member-testimonial, div.single-member div.member-skills {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #CCCCCC;
+}
+
+@media all and (max-width: 767px) {
+
+	div.single-member div.member-image {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+}
+
+/* Member Donate CSS */
+div.member-donate p {
+	text-align: center;
+	font-size: 28px;
+	text-align: center;
+	color: #8e8e93;
+}
+
+div.member-donate form {
+	text-align: center;
+	margin-top: 48px;
+}
+
+@media all and (max-width: 767px) {
+	div.member-donate form div.form-group {
+		text-align: center;
+	}
+
+	body div.member-donate input#amount {
+		display: inline-block;
+		margin-right: 0;
+		width: 158px;
+	}
+
+	div.member-donate p {
+		font-size: 21px;
+	}
+}
+
+div.member-donate input#amount {
+	font-size: 22px;
+	padding: 25px 10px;
+	width: 155px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+div.member-donate input#amount::-webkit-input-placeholder {
+   text-align: left;
+}
+
+div.member-donate input#amount::-webkit-input-placeholder {
+   text-align: left;
+}
+
+div.member-donate input#amount:-moz-placeholder { /* Firefox 18- */
+   text-align: left;
+}
+
+div.member-donate input#amount::-moz-placeholder {  /* Firefox 19+ */
+   text-align: left;
+}
+
+div.member-donate input#amount:-ms-input-placeholder {  
+   text-align: left;
+}
+
+/* Pages */
+div.page-content {
+	font-size: 21px;
+	line-height: 2em;
+}
+
+div.page-content p {
+	margin-bottom: 40px;
+}
+
+body.page h1 {
+	margin-bottom: 50px;
+}
+
